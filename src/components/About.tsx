@@ -80,8 +80,8 @@ const About = () => {
 
             <motion.div variants={itemVariants}>
               <motion.a
-                href="/resume/BHARATH-R-Resume.pdf"
-                download="BHARATH-R-Resume.pdf"
+                href="/resume/BHARATH_Lead Gen_UIUX_Designer_Resume.pdf"
+                download="BHARATH_Lead Gen_UIUX_Designer_Resume.pdf"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center space-x-2 px-8 py-3 bg-gradient-to-r from-blue-500 to-green-500 text-white font-semibold rounded-full glow-green transition-all duration-300"
