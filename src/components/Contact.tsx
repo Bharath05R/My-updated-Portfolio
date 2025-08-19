@@ -176,7 +176,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="text-white font-semibold">Location</div>
-                    <div className="text-gray-400">Chennai</div>
+                    <div className="text-gray-400">Chennai, Coimbatore</div>
                   </div>
                 </div>
               </div>
