@@ -44,9 +44,15 @@ const Navigation = () => {
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold gradient-text"
+            className="text-2xl font-bold gradient-text flex items-center space-x-3"
           >
-            Bharath
+            Bharath 
+             <img
+              src="/images/bharath-logo.png"
+              alt="Bharath Logo 2"
+              className="w-16 h-16 object-contain"
+            />
+
           </motion.div>
 
           {/* Desktop Navigation */}
