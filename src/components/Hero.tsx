@@ -53,7 +53,7 @@ const Hero = () => {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="text-center lg:text-left"
+            className="text-center lg:text-left order-2 lg:order-1"
           >
             <motion.div variants={itemVariants} className="mb-6">
               <span className="text-lg text-pink-400 font-small">
@@ -61,11 +61,24 @@ const Hero = () => {
               </span>
             </motion.div>
 
+            {/* Mobile Portrait (inline after Hello I'm) */}
+            <div className="block lg:hidden mb-6">
+              <motion.img
+                src="/images/barath-profile-image.jpeg"
+                alt="My Portrait"
+                className="w-48 h-48 mx-auto rounded-2xl object-cover"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.5 }}
+              />
+            </div>
+
             <motion.h1
               variants={itemVariants}
               className="text-5xl lg:text-6xl font-normal mb-6"
             >
-              <span className="gradient-text">Lead Generation Specialist | UI/UX Designer</span>
+              <span className="gradient-text">
+                Lead Generation Specialist | UI/UX Designer
+              </span>
               <br />
               <span className="text-white"></span>
             </motion.h1>
@@ -149,12 +162,12 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Side - 3D Model */}
+          {/* Right Side - 3D Model / Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="relative"
+            className="relative hidden lg:block order-1 lg:order-2"
           >
             <Tilt
               tiltMaxAngleX={25}
@@ -163,7 +176,7 @@ const Hero = () => {
               transitionSpeed={450}
               glareEnable={true}
               glareMaxOpacity={0.5}
-              className="w-full h-85 lg:h-[500px]" // no full-width stretch
+              className="w-full h-85 lg:h-[500px]"
             >
               <div className="w-full h-full glass-card rounded-2xl p-8 glow relative overflow-hidden">
                 {/* Portrait Image */}
